@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASB Construction Inc. | New Website Coming Soon</title>
+  <meta name="description" content="ASB Construction Inc. builds dairy, poultry and equestrian barns, drivesheds, workshops, manure storage, homes and commercial buildings. Our new website is coming soon. Call or email us for a quote.">
+  <style>
+    /* ASB brand colours */
+    :root {
+      --orange: #c75f2a;      /* buttons (slightly deeper than the leaf for readable white text) */
+      --orange-dark: #a94c1d;
+      --leaf: #d06834;        /* exact maple-leaf orange */
+      --green: #689c41;       /* logo green */
+      --grey: #a0a1a4;        /* logo grey */
+      --ink: #1f2328;
+      --muted: #5b6470;
+      --bg: #f6f7f5;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+    }
+    .bar { height: 6px; background: linear-gradient(90deg, var(--leaf) 0 50%, var(--green) 50% 100%); }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 640px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,.08);
+      padding: 48px 40px;
+      text-align: center;
+    }
+    .logo { width: 100%; max-width: 320px; height: auto; margin: 0 auto 32px; display: block; }
+    .eyebrow {
+      display: inline-block; font-size: .8rem; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--orange-dark); margin-bottom: 8px;
+    }
+    h1 { font-size: clamp(1.7rem, 5vw, 2.3rem); line-height: 1.2; margin: 0 0 16px; }
+    p { margin: 0 0 16px; color: var(--muted); }
+    .services {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;
+      list-style: none; padding: 0; margin: 24px 0 32px;
+    }
+    .services li {
+      font-size: .9rem; font-weight: 600; padding: 6px 14px; border-radius: 999px;
+      background: #eef5e8; color: #3e6e21;
+    }
+    .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .btn {
+      display: inline-block; padding: 14px 26px; border-radius: 8px; font-weight: 700;
+      text-decoration: none; border: 2px solid var(--orange); font-size: 1rem;
+      transition: background .15s, color .15s;
+    }
+    .btn-primary { background: var(--orange); color: #fff; }
+    .btn-primary:hover { background: var(--orange-dark); border-color: var(--orange-dark); }
+    .btn-outline { color: var(--orange-dark); background: #fff; }
+    .btn-outline:hover { background: var(--orange); color: #fff; }
+    .details { margin-top: 32px; padding-top: 24px; border-top: 1px solid #e2e5e9; font-size: .95rem; }
+    .details p { margin: 0 0 4px; }
+    footer { text-align: center; font-size: .85rem; color: var(--muted); padding: 20px 16px; }
+    @media (max-width: 520px) {
+      .card { padding: 36px 20px; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bar"></div>
+  <main>
+    <div class="card">
+      <img src="images/logo-stacked.jpg" alt="ASB Construction Inc." class="logo" width="1562" height="911">
+
+      <span class="eyebrow">New website coming soon</span>
+      <h1>We're building something new</h1>
+      <p>Our new website is under construction. In the meantime, we're open for business. Call or email us to talk about your next project.</p>
+
+      <ul class="services">
+        <li>Dairy</li>
+        <li>Drivesheds</li>
+        <li>Workshops</li>
+        <li>Equestrian</li>
+        <li>Poultry</li>
+        <li>Manure Storage</li>
+        <li>Renovations</li>
+        <li>Residential</li>
+        <li>Commercial</li>
+      </ul>
+
+      <div class="actions">
+        <a href="tel:+5195324760" class="btn btn-primary">Call (519) 532-4760</a>
+        <a href="mailto:john@asbinc.ca" class="btn btn-outline">Email Us</a>
+      </div>
+
+      <div class="details">
+        <p><strong>ASB Construction Inc.</strong></p>
+        <p>574249 Old School Line, Woodstock, ON N4S 7V8</p>
+        <p>john@asbinc.ca</p>
+      </div>
+    </div>
+  </main>
+  <footer>© <span id="year">2026</span> ASB Inc. All rights reserved.</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
